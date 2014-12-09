@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project name="JarManager" basedir="." default="all" >
+	<!-- build.xml will be overwritten by Maven or Eclipse. -->
+	<property environment="env" />
+	<property file="build-package.properties" />
+	<!-- property name="junit.output.dir" value="junit" / -->
+	<property name="debuglevel" value="source,lines,vars" />
+	
+	<!-- aspects4swing supports only Java 1.6. See http://www.fuin.org/aspects4swing/ -->
+	<property name="target" value="1.8" />
+	<property name="source" value="1.8" />
+	<property name="src" value="src" />
+	<property name="build" value="bin" />
+	<property name="docs" value="docs" />
+	<property name="jarfile-minimum" value="jarmanager-minimum.jar" />
+	<property name="jarfile-all" value="jarmanager-all.jar" />
+	<property name="packagename" value="t.n.jarmanager" />
+	<property name="packagepath" value="t/n/jarmanager" />
+	<property name="mainClass" value="${packagename}.JarManagerApp" />
+
+	<path id="JarManager.classpath">
+		<pathelement location="bin" />
+		<pathelement location="${APP_FRAMEWORK}" />
+		<pathelement location="${SWING_WORKER}" />
+		<pathelement location="${DERBY}" />
+		<pathelement location="${LOG4J}" />
+        <pathelement location="${ASPECTJ}"/>
+        <pathelement location="${ASPECTS4SWING}"/>
+		<pathelement location="${COMMONS_LANG}" />
+	</path>
+	
+	<!-- http://www.rgagnon.com/javadetails/java-0587.html -->
+	<pathconvert property="manifest.classpath" pathsep=" ">
+  		<path refid="JarManager.classpath"/>
+		<mapper>
+		    	<chainedmapper>
+		       		<flattenmapper/>
+    	   			<globmapper from="*.jar" to="*.jar"/>
+	    		</chainedmapper>
+		</mapper>
+    </pathconvert>
+	
+	<target name="init" >
+		<echo message="${ant.version}"/>
+		<mkdir dir="bin" />
+		<mkdir dir="lib" />
+		<!-- mkdir dir="unpack" / -->
+	</target>
+	
+    <target name="init.taskdefs" depends="init">
+      <!-- sets name of new task to iajc, old task to ajc -->
+      <taskdef resource="org/aspectj/tools/ant/taskdefs/aspectjTaskdefs.properties">
+          <classpath> 
+          	<pathelement location="${ASPECTJ_TOOLS}"/>
+          </classpath>
+      </taskdef>
+	  <property name="taskdefs.init" value="true"/>
+    </target>
+	
+	<!-- Copy resource files -->
+	<target name="copyresources" depends="compile">
+		<copy todir="${build}/${packagepath}">
+			<fileset dir="${src}/${packagepath}">
+				<exclude name="*.java" />
+				<exclude name="**/attic/*.class" />
+			</fileset>
+		</copy>
+	</target>
+
+	<!-- Genrate Jar files -->
+	<target name="all" depends="init,init.taskdefs,all-package,minimum-package" />
+
+	<!-- Generate all in one Jar file. Use of JarRsrcLoader enables us to Jar in Jar. -->
+	<target name="all-package" depends="copyresources">
+		<jar destfile="${jarfile-all}"><!--manifest="manifest-all.txt" -->
+			<manifest>
+				<attribute name="Rsrc-Class-Path" value="./ ${manifest.classpath}"/>
+				<attribute name="Class-Path" value="."/>
+				<attribute name="Rsrc-Main-Class" value="t.n.jarmanager.JarManagerApp"/>
+				<attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
+			</manifest>	
+			<fileset dir="${build}">
+				<include name="**/*.class" />
+				<include name="**/resources/**" />
+				<exclude name="**/attic/*.class" />
+			</fileset>	
+			<!-- I don't know how to ommit this. Now JDK contain derby.jar, but if I ommit this, the app failed to find it. -->
+			<fileset file="${DERBY}" />
+			<fileset file="${APP_FRAMEWORK}" />
+			<fileset file="${SWING_WORKER}" />
+			<fileset file="${ASPECTJ}" />
+	        <fileset file="${ASPECTS4SWING}" />
+			<fileset file="${LOG4J}" />
+			<fileset file="${COMMONS_LANG}" />			
+		</jar>
+	</target>
+
+	<target name="minimum-package" depends="copyresources">
+		<jar destfile="${jarfile-minimum}">
+			<manifest>
+				<attribute name="Class-Path" value="."/>			
+				<attribute name="Main-Class" value="t.n.jarmanager.JarManagerApp"/>
+			</manifest>	
+			<fileset dir="${build}">
+				<include name="**/*.class" />
+				<include name="**/resources/**" />
+				<!-- include refid="${JarManager.classpath}" / -->
+				<exclude name="**/attic/*.class" />
+			</fileset>
+		</jar>
+	</target>
+	
+    <!-- We need Aspectj to compile this app. (http://www.eclipse.org/aspectj/) -->
+	<target name="compile" depends="aspect-compile"/>
+	<target name="aspect-compile" depends="init,init.taskdefs">
+	    <iajc destdir="bin" source="${source}" target="${target}" encoding="UTF-8">
+	    	<src path="src"/>
+	    	<classpath refid="JarManager.classpath" />
+	    </iajc>
+	  </target>
+	  <target name="clean">
+		<delete dir="bin"/> <!-- this also deletes subdirectories -->
+		<delete file="${jarfile-minimum}" />
+		<delete file="${jarfile-all}" />
+	</target>
+
+</project>

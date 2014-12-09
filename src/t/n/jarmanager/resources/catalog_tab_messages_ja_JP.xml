@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+  <!-- Popup menu -->
+  <entry key="jar.normal">右クリックメニューよりJARファイルの内容を表示することができます。</entry>
+  <entry key="jar.deleted">JARファイルが削除されています。</entry>
+  <entry key="jar.replaced">JARファイルが変更されています。</entry>
+
+  <!-- UI Components -->
+  <entry key="catalogTable.columnModel.title0">有効</entry>
+  <entry key="catalogTable.columnModel.title1">JARファイル名</entry>
+  <entry key="catalogTable.columnModel.title2">フォルダ</entry>
+  <entry key="catalogTable.columnModel.title3">更新日時</entry>
+  <entry key="catalogTable.columnModel.title4">署名</entry>
+  <entry key="catalogTable.columnModel.title5">実行可能</entry>
+  <entry key="catalogTable.columnModel.title6">登録日</entry>
+
+  <entry key="jar_filename">JARファイル名:</entry>
+  <entry key="validCheckStartButton.text">確認...</entry>
+  <entry key="validCheckStartButton.toolTipText">カタログに登録されているJARファイルが更新・削除されていないか確認します。もし更新・削除されていた場合「有効」欄が変化します。</entry>
+  <entry key="validCheckCancelButton.text">確認をキャンセル</entry>
+  <entry key="validCheckCancelButton.toolTipText">実行中の確認をキャンセルします。</entry>
+  <entry key="repositUpdateButton.text">更新...</entry>
+  <entry key="repositUpdateButton.toolTipText">カタログに登録されているJARファイルがファイルシステム上で削除・更新されていた場合にカタログを更新します。</entry>
+  <entry key="tfSearchJarName.toolTipText">ここに検索対象のJARファイル名を入力し、検索します。</entry>
+  <entry key="jarSearchStartButton.text">検索</entry>
+  <entry key="jarSearchStartButton.toolTipText">JARファイルの欄に入力されたJARファイルをカタログから探します。</entry>
+  <entry key="jarSearchNextButton.text">下へ</entry>
+  <entry key="jarSearchNextButton.toolTipText">下のJARファイルを探します。</entry>
+  <entry key="jarSearchPrevButton.text">上へ</entry>
+  <entry key="jarSearchPrevButton.toolTipText">上のJARファイルを探します。</entry>
+  <entry key="jarSearchClearButton.text">クリア</entry>
+  <entry key="jarSearchClearButton.toolTipText">JARファイル欄をクリアします。</entry>
+
+  <!-- Messages -->
+  <entry key="wait_reading_catalog">カタログを読み込み中です。しばらくお待ちください。</entry>
+  <entry key="no_jars_in_catalog">まだカタログに一件も登録されていません。</entry>
+  <entry key="no_of_jar_files_are_registered">1#{0}件のJARファイルが登録されています。|1&lt;{0}件のJARファイルが登録されています。</entry>
+
+  <entry key="now_verifing">確認中です。</entry>
+  <entry key="verify_completed">確認が終わりました。</entry>
+  <entry key="verify_canceled">確認がキャンセルされました。</entry>
+  <entry key="all_items_are_ok">全件とも問題ありませんでした。</entry>
+  <entry key="content_of_jar_file">JARファイルの内容を表示</entry>
+  <entry key="copy_jarfile_fullpath">JARファイルのフルパスをコピー</entry>
+  <entry key="some_items_become_invalid">1#{0}件が無効になりました|1&lt;{0}件が無効になりました</entry>
+
+  <entry key="now_updating">更新中です。</entry>
+  <entry key="update_completed">更新が終わりました。</entry>
+
+  <entry key="jarname_found">1#{0}件のJARファイルが見つかりました。|1&lt;{0}件のJARファイルが見つかりました。</entry>
+  <entry key="jarname_not_found">JARファイルが見つかりませんでした。</entry>
+
+</properties>

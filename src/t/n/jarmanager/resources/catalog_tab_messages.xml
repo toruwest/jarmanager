@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+  <!-- Popup menu -->
+  <entry key="jar.normal">You can see the contens of jar file from context menu (click the item with right mouse button)</entry>
+  <entry key="jar.deleted">JAR file was deleted.</entry>
+  <entry key="jar.replaced">JAR file was updated.</entry>
+
+  <!-- UI Components -->
+  <entry key="catalogTable.columnModel.title0">Valid</entry>
+  <entry key="catalogTable.columnModel.title1">JAR file name</entry>
+  <entry key="catalogTable.columnModel.title2">Folder</entry>
+  <entry key="catalogTable.columnModel.title3">Last modified</entry>
+  <entry key="catalogTable.columnModel.title4">Signed?</entry>
+  <entry key="catalogTable.columnModel.title5">Executable?</entry>
+  <entry key="catalogTable.columnModel.title6">Regist date</entry>
+
+  <entry key="jar_filename">JAR filename:</entry>
+  <entry key="validCheckStartButton.text">Verify ...</entry>
+  <entry key="validCheckStartButton.toolTipText">Confirm if the jar files on the catalog are updated or deleted. If so, following valid columns on the table are changed.</entry>
+  <entry key="validCheckCancelButton.text">Cancel verifying</entry>
+  <entry key="validCheckCancelButton.toolTipText">Cancel verifying.</entry>
+  <entry key="repositUpdateButton.text">Update ...</entry>
+  <entry key="repositUpdateButton.toolTipText">When the jar files on the catalog is updated or deleted, update the catalog by clicking this.</entry>
+  <entry key="tfSearchJarName.toolTipText">Type the jar file name you want to search.</entry>
+  <entry key="jarSearchStartButton.text">Search</entry>
+  <entry key="jarSearchStartButton.toolTipText">Search the jar file that consists of the name specified in Jar file text field.</entry>
+  <entry key="jarSearchNextButton.text">Next</entry>
+  <entry key="jarSearchNextButton.toolTipText">Search the forward JAR file.</entry>
+  <entry key="jarSearchPrevButton.text">Prev</entry>
+  <entry key="jarSearchPrevButton.toolTipText">Search the backward JAR file.</entry>
+  <entry key="jarSearchClearButton.text">Clear</entry>
+  <entry key="jarSearchClearButton.toolTipText">Clear the JAR file text field.</entry>
+  
+  <!-- Messages -->
+  <entry key="wait_reading_catalog">Now reading catalog. Please wait.</entry>
+  <entry key="no_jars_in_catalog">No jar files are registered yet.</entry>
+  <entry key="no_of_jar_files_are_registered">1#{0} file is registered.|1&lt;{0} files are registered.</entry>
+
+  <entry key="now_verifing">Now verifing: </entry>
+  <entry key="verify_completed">Verify completed.</entry>
+  <entry key="verify_canceled">Verify canceled.</entry>
+  <entry key="all_items_are_ok">All items of the catalog are valid.</entry>
+  <entry key="content_of_jar_file">Dump contents of this JAR file/</entry>
+  <entry key="copy_jarfile_fullpath">Copy the fullpath of this JAR file.</entry>
+  <entry key="some_items_become_invalid">1#{0} item has become invalid.|1&lt;{0} items has become invalid.</entry>
+
+  <entry key="now_updating">Now updating ...</entry>
+  <entry key="update_completed">Updating done.</entry>
+
+  <entry key="jarname_found">1#Found {0} item.|1&lt;Found {0} items.</entry>
+  <entry key="jarname_not_found">JAR file not found.</entry>
+
+</properties>

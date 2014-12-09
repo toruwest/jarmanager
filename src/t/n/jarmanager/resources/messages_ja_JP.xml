@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+  <entry key="applicationTitle">Jar Manager</entry>
+
+  <!--  top-level menu -->
+  <entry key="fileMenu.text">ファイル</entry>
+  <entry key="helpMenu.text">ヘルプ</entry>
+  <entry key="exitMenuItem.text">終了</entry>
+  <entry key="aboutMenuItem.text">JarManagerについて</entry>
+  <entry key="optionMenu.text">オプション</entry>
+  <entry key="configMenuItem.text">設定...</entry>
+
+  <!-- short cut keys -->
+  <entry key="TextComponentPopupMenu.cut">切り取り(X)</entry>
+  <entry key="TextComponentPopupMenu.copy">コピー(C)</entry>
+  <entry key="TextComponentPopupMenu.paste">貼り付け(V)</entry>
+  <entry key="TextComponentPopupMenu.selectall">すべて選択(A)</entry>
+  
+  <!--  @Action resource -->
+  <entry key="showAboutBox.Action.text">JarManagerについて...</entry>
+  <entry key="showAboutBox.Action.shortDescription">Show the application's information dialog</entry>
+
+  <!-- UI Components -->
+  <entry key="jPanel1.TabConstraints.tabTitle">JAR > クラス</entry>
+  <entry key="jPanel2.TabConstraints.tabTitle">クラス > JAR</entry>
+  <entry key="jPanel3.TabConstraints.tabTitle">カタログ</entry>
+  <entry key="jarNameLabel.text">JARファイル</entry>
+  
+  <!--  About dialog -->
+  <entry key="versionLabel.text">バージョン</entry>
+  <entry key="Application.version">0.9</entry>
+  <!-- entry key="vendorLabel.text"></entry -->
+  <!-- entry key="Application.vendor"></entry -->
+  <entry key="homepageLabel.text">ホームページ</entry>
+  <entry key="Application.homepage">http://github.com/toruwest/jarmanager/</entry>
+  <!-- entry key="appDescLabel.text"></entry-->
+  <entry key="closeButton.text">閉じる</entry>
+
+  <!-- Messages -->
+  <entry key="fileLockDetected">&lt;html&gt;既に実行中です。あるいは、前回異常終了したためロックファイル".jarManager.lock"がアプリケーション・ディレクトリに残っていますので、&lt;br&gt;削除してから再実行してください。アプリケーション・ディレクトリは以下のとおりです。&lt;br&gt; {0}&lt;/html&gt;</entry>
+  <entry key="alreadyRunning">既に実行中です。</entry>
+  <entry key="contentsOfManifest.text">マニフェストの内容</entry>
+  <entry key="endOfManifest.text">マニフェスト　ここまで</entry>
+  <entry key="noManifestFound.text">マニフェストがありません。</entry>
+  <entry key="jarNotFound.text">jarファイルが見つかりませんでした。</entry>
+  <entry key="confirmExit">終了しますか？</entry>
+  <entry key="exit">終了</entry>
+  <entry key="exitMessage">終了します。</entry>
+</properties>

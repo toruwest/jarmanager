@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+  <!-- UI Components -->
+  <entry key="jar_filename">JARファイル名:</entry>
+  <!-- entry key="tfJarFilename.text">JARファイル名を入力、または下のFileボタンをクリックし選択、またはドロップします。</entry -->
+  <!-- entry key="jarFilenameLabel.text">JAR file</entry -->
+  <entry key="tfJarFilename.toolTipText">&lt;html&gt;>ここにJARファイル名を入力、または下のFileボタンをクリックし選択、またはエクスプローラからドラッグ＆ドロップします。&lt;br&gt;複数のファイルを;で区切って入力できます。&lt;/html&gt;</entry>
+  <entry key="textfieldCompletedButton.text">JARの内容を表示</entry>
+  <entry key="textfieldCompletedButton.tooltiptext">JARファイルの欄に入力されたJARファイルの内容を表示します。</entry>
+  <entry key="fileChoiceButton.text">File...</entry>
+  <entry key="fileChoiceButton.toolTipText">JARファイルを指定します。複数指定できます。</entry>
+  <entry key="addToRepoButton.text">登録</entry>
+  <entry key="addToRepoButton.toolTipText">JARファイルをレポジトリに追加します。ファイル名の欄に有効なJARファイルを入力済みの場合のみ有効です。</entry>
+  <entry key="fileClearButton.text">クリア</entry>
+  <entry key="fileClearButton.toolTipText">この画面の内容を消去します。</entry>
+  <entry key="startScanButton.text">スキャン...</entry>
+  <entry key="startScanButton.toolTipText">指定されたディレクトリの下にある全てのJARファイルを再帰的に探し、登録します。</entry>
+  <entry key="cancelScanButton.text">スキャン中止</entry>
+  <entry key="cancelScanButton.toolTipText">スキャンを中止します。</entry>
+  <entry key="jarContentText.text">ここに指定したJARファイルの内容が表示されます。</entry>
+  <entry key="jarFileList.toolTipText">ここに指定されたクラスを含むJARファイルのフルパスが表示されます。</entry>
+
+  <!-- Messages -->
+  <entry key="scanTargetFolder.text">をスキャンしています。</entry>
+  <entry key="scanFoundJar.text"> {0}が見つかりました。</entry>
+  <entry key="scanComplete.text">スキャンが完了しました。</entry>
+  <entry key="scanCancelled.text">スキャンをキャンセルしました。</entry>
+  <!-- entry key="scannedStatus.text">カタログにJARファイルを{0}件追加、{1}件置換、{2}件登録済み、{3}件はJARファイルではありません、{4}件I/Oエラーで失敗。</entry -->
+  <entry key="cancel_accepted.text">キャンセルを受け付けました。</entry>
+
+  <entry key="newlyaddJar.text">新規登録しました。</entry>
+  <entry key="updateJar.text">更新しました。</entry>
+  <entry key="registeredJar.text">既に登録されています。</entry>
+  <entry key="failedJarNotExist.text">JARファイルが有りません。</entry>
+  <entry key="failedJarNotJar.text">JARファイルではありません。</entry>
+  <entry key="failedJarIOError.text">I/Oエラーです。</entry>
+  <entry key="init_error">初期化時の致命的なエラーです。</entry>
+
+  <entry key="addCatalogResult.text">カタログに追加：{0}件、置換：{1}件、登録済み：{2}件、JARファイルではない：{3}件、I/Oエラー:{4}件。</entry>
+  <entry key="catalogStatus.text">未登録：{0}件、登録済み：{1}件、更新：{2}件。</entry>
+  <entry key="all_new.text">このJARファイルは登録されていません。</entry>
+  <entry key="all_new_or_updated.text">このJARファイルは登録されていないか、更新されています。</entry>
+</properties>

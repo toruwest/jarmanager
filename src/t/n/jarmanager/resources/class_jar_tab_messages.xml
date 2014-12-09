@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+  <!-- UI Components -->
+  <entry key="classNameLabel.text">Class</entry>
+  <entry key="tfSearchClassname.text">class name(FQCN)</entry>
+  <entry key="tfSearchClassname.toolTipText">Type the class name you want to search. any part of FQCN is acceptable.</entry>
+  <entry key="classSearchStartButton.text">Search ...</entry>
+  <entry key="classSearchStartButton.toolTipText">You can search the jar file that contains the class name you specified.</entry>
+  <entry key="webSearchButton.text">Web search...</entry>
+  <entry key="webSearchButton.toolTipText">You can search the jar file that contains the class name by accessing http://www.jarfinder.com/</entry>
+  <entry key="classSearchClearButton.text">Clear</entry>
+  <entry key="classSearchClearButton.toolTipText">Clear the contents of this window.</entry>
+  <entry key="close_webpage_dialog.text">Close</entry>
+  <entry key="jarFileList.toolTipText">Here you can see the list of jar file(s) that contains specified class.</entry>
+  <entry key="jarContentText2.text">You can see the contents of jar file containing specified class.</entry>
+
+  <!-- Messages -->
+  <entry key="opening_webpage.text">Opening http://www.jarfinder.com with web browser</entry>
+  <entry key="directBrowserOpenCheckBox.text">Next time don't show this dialog and directly opens the browser.</entry>
+  <entry key="webpage_dialog_guidance.text">You can see the result of searching the class at http://www.jarfinder.com/</entry>
+  <entry key="jarname.not.found.text">JAR file not found.</entry>
+  <entry key="jarname.found.text">Found {0} items.</entry>
+  <entry key="containsNItemsInThisJarFile">This jar file contains {0} classes.</entry>
+</properties>

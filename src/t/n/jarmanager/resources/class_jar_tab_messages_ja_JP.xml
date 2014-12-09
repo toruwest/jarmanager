@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+  <!-- UI Components -->
+  <entry key="classNameLabel.text">クラス</entry>
+  <entry key="tfSearchClassname.text">クラス名(FQCN)</entry>
+  <entry key="tfSearchClassname.toolTipText">ここに検索対象のクラスを入力し、検索します。</entry>
+  <entry key="webSearchButton.text">Web検索...</entry>
+  <entry key="webSearchButton.toolTipText">http://www.jarfinder.com/にアクセスし、指定のクラスを含むJARファイルを検索します。</entry>
+  <entry key="classSearchClearButton.text">クリア</entry>
+  <entry key="classSearchClearButton.toolTipText">この画面の内容を消去します。</entry>
+  <entry key="classSearchStartButton.text">検索...</entry>
+  <entry key="classSearchStartButton.toolTipText">カタログに登録されているJARファイルの中から、指定のクラスを含むJARファイルを検索します。</entry>
+  <entry key="close_webpage_dialog.text">閉じる</entry>
+  <entry key="jarFileList.toolTipText">ここに、指定されたクラスを含むJARファイルのフルパスが表示されます。</entry>
+  <entry key="jarContentText2.text">ここに、指定したクラスを含むJARファイルの内容が表示されます。</entry>
+	      
+  <!-- Messages -->
+  <entry key="opening_webpage.text">http://www.jarfinder.comを開きます。</entry>
+  <entry key="directBrowserOpenCheckBox.text">次回からはこのダイアログを表示せず直接ブラウザを起動する。</entry>
+  <entry key="webpage_dialog_guidance.text">これをクリックするとhtt://www.jarfinder.com/での検索結果がブラウザに表示されます。</entry>
+  <entry key="jarname.not.found.text">JARファイルが見つかりませんでした。</entry>
+  <entry key="jarname.found.text">{0}件のJARファイルが見つかりました。</entry>
+  <entry key="containsNItemsInThisJarFile">このJARファイルには検索対象のクラスが{0}件含まれています。</entry>
+</properties>

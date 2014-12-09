@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+  <entry key="applicationTitle">Jar Manager</entry>
+
+  <!--  top-level menu -->
+  <entry key="fileMenu.text">File</entry>
+  <entry key="helpMenu.text">Help</entry>
+  <entry key="exitMenuItem.text">Exit</entry>
+  <entry key="aboutMenuItem.text">About JarManager</entry>
+  <entry key="optionMenu.text">Option</entry>
+  <entry key="configMenuItem.text">Config...</entry>
+
+  <!-- short cut keys -->
+  <entry key="TextComponentPopupMenu.cut">Cut(X)</entry>
+  <entry key="TextComponentPopupMenu.copy">Copy(C)</entry>
+  <entry key="TextComponentPopupMenu.paste">Paste(V)</entry>
+  <entry key="TextComponentPopupMenu.selectall">Select all(A)</entry>
+
+  <!--  @Action resource -->
+  <entry key="showAboutBox.Action.text">About...</entry>
+  <entry key="showAboutBox.Action.shortDescription">Open the application's information dialog</entry>
+
+  <!-- UI Components -->
+  <entry key="jPanel1.TabConstraints.tabTitle">JAR > Class</entry>
+  <entry key="jPanel2.TabConstraints.tabTitle">Class > JAR</entry>
+  <entry key="jPanel3.TabConstraints.tabTitle">Catalog</entry>
+  <entry key="jarNameLabel.text">JAR file</entry>
+
+  <!--  About dialog -->
+  <entry key="versionLabel.text">Version</entry>
+  <entry key="Application.version">0.9</entry>
+  <!-- entry key="vendorLabel.text"></entry -->
+  <!-- entry key="Application.vendor"></entry -->
+  <entry key="homepageLabel.text">Web page</entry>
+  <entry key="Application.homepage">http://github.com/toruwest/jarmanager/</entry>
+  <!-- entry key="appDescLabel.text"></entry-->
+  <entry key="closeButton.text">Close</entry>
+
+  <!-- Messages -->
+  <entry key="fileLockDetected">&lt;html&gt;Another instance of this application is already running, or this program terminates unexpectedly so that lock file ".jarManager.lock" exists in the application directory. &lt;br&gt;Please delete it and try again. Application directory is as follows.&lt;br&gt;{0}&lt;/html&gt;</entry>
+  <entry key="alreadyRunning">Already running</entry>
+  <entry key="contentsOfManifest.text">Contents of manifest</entry>
+  <entry key="endOfManifest.text">End of manifest</entry>
+  <entry key="noManifestFound.text">No manifest file found.</entry>
+  <entry key="confirmExit">Are you surely want to exit?</entry>
+  <entry key="exit">Exit</entry>
+  <entry key="exitMessage">Exiting</entry>
+</properties>

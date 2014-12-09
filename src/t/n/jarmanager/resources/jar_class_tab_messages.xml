@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+  <!-- UI Components -->
+  <entry key="jar_filename">JAR filename:</entry>
+  <!-- entry key="tfJarFilename.text">Type the jar file name, choose the file with the file choose dialog, or drop the file from explorer.</entry-->
+  <!-- entry key="jarFilenameLabel.text">JAR file</entry -->
+  <entry key="tfJarFilename.toolTipText">&lt;html&gt;You can choice the jar file you want to regist from Explorer, or drag and drop the file from Explorer, or type the jar file's full path.&lt;br&gt;You can specify multi files separated by ';'&lt;/html&gt;</entry>
+  <entry key="textfieldCompletedButton.text">Check JAR file</entry>
+  <entry key="textfieldCompletedButton.tooltiptext">Show the contents of JAR file specified in this field.</entry>
+  <entry key="fileChoiceButton.text">File...</entry>
+  <entry key="fileChoiceButton.toolTipText">You can choice the jar file you want to regist by a file choice dialog.</entry>
+  <entry key="addToRepoButton.text">Regist</entry>
+  <entry key="addToRepoButton.toolTipText">Regist the jar files into the catalog.</entry>
+  <entry key="fileClearButton.text">Clear</entry>
+  <entry key="fileClearButton.toolTipText">Clear the contents of this window.</entry>
+  <entry key="startScanButton.text">Scan...</entry>
+  <entry key="startScanButton.toolTipText">Search the jar file under the specified directory and regist them recursively.</entry>
+  <entry key="cancelScanButton.text">Cancel scanning</entry>
+  <entry key="cancelScanButton.toolTipText">Cancel the scanning process</entry>
+  <entry key="jarContentText.text">You can see the contents of specified jar file.</entry>
+  <entry key="jarFileList.toolTipText">Here you can see the list of jar file(s) that contains specified class.</entry>
+
+  <!-- Messages -->
+  <entry key="scanTargetFolder.text">Scanning...</entry>
+  <entry key="scanFoundJar.text">Found Jar file: {0}</entry>
+  <entry key="scanComplete.text">Scan completed. </entry>
+  <entry key="scanCancelled.text">Scan was canceled. </entry>
+  <!-- entry key="scannedStatus.text">Added:{0}, replaced:{1}, already registered:{2}, not jar file:{3}, I/O error:{4}.</entry -->
+  <entry key="cancel_accepted.text">Cancel accepted.</entry>
+
+  <entry key="newlyaddJar.text">newly added.</entry>
+  <entry key="updateJar.text">Updated.</entry>
+  <entry key="registeredJar.text">Already registered.</entry>
+  <entry key="failedJarNotExist.text">JAR file does not exist.</entry>
+  <entry key="failedJarNotJar.text">Not a JAR file.</entry>
+  <entry key="failedJarIOError.text">I/O error occurs.</entry>
+  <entry key="init_error">Fatal error occurred during initializing.</entry>
+  
+  <entry key="addCatalogResult.text">Result : Added:{0}, replaced:{1}, already registered:{2}, not a JAR file:{3}, I/O error: {4} </entry>
+  <entry key="catalogStatus.text">new:{0}, already registered:{1}, updated:{2}</entry>
+  <entry key="all_new.text">This JAR file is not registered.</entry>
+  <entry key="all_new_or_updated.text">This JAR file is not registered or updated.</entry>
+</properties>
